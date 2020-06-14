@@ -1,0 +1,70 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title To-Do List
+  link(href='https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+  link(rel='stylesheet' href='css/todo_main.css')
+  script(defer='' src='js/todo_script.js')
+  script(type='text/javascript' src='https://addevent.com/libs/atc/1.6.1/atc.min.js' async='' defer='')
+  script(type='text/javascript').
+    window.addeventasync = function(){
+    addeventatc.settings({
+    appleical  : {show:true, text:"Apple Calendar"},
+    google     : {show:true, text:"Google <em>(online)</em>"},
+    office365  : {show:true, text:"Office 365 <em>(online)</em>"},
+    outlook    : {show:true, text:"Outlook"},
+    outlookcom : {show:true, text:"Outlook.com <em>(online)</em>"},
+    yahoo      : {show:true, text:"Yahoo <em>(online)</em>"}
+    });
+    };
+h1.title Stuff I need to do
+.all-tasks
+  h2.task-list-title My lists
+  ul.task-list(data-lists='')
+  form(action='#' data-new-list-form='')
+    input.new.list(type='text' data-new-list-input='' placeholder='new list name' aria-label='new list name')
+    button.btn.create(aria-label='create new list') +
+.todo-list(data-list-display-container='')
+  .todo-header
+    h2.list-title(data-list-title='') YouTube
+    p.task-count(data-list-count='') 3 tasks remaining
+  .todo-body
+    .tasks(data-tasks='')
+    .new-task-creator
+      form(action='' data-new-task-form='')
+        input.new.task(type='text' data-new-task-input='' placeholder='new task name' aria-label='new task name')
+        button.btn.create(aria-label='create new task') +
+        button.btn.create.addeventatc.ml-auto
+    .delete-stuff
+      button.btn.delete(data-clear-complete-tasks-button='') Clear completed tasks
+      button.btn.delete(data-delete-list-button='') Delete list
+      button.btn.logout(data-logout='') Log Out...
+// <div title="Add to Calendar" class="addeventatc"></div>
+template#task-template
+  .task
+    input(type='checkbox')
+    label
+      span.custom-checkbox
+footer.social-footer
+  .social-container
+    // <a href="#" class="social__icon--linkedin"><i class="icon--linkedin"></i></a>
+    // <i class="icon--linkedin"></i>
+    // <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+    // <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+    a.tran3s.round-border(href='https://mail.google.com/mail/u/?authuser=vrnarenkumar@gmail.com')
+      i.fa.fa-google(aria-hidden='true')
+    a.tran3s.round-border(href='https://www.facebook.com/vrnk.71299')
+      i.fa.fa-facebook(aria-hidden='true')
+    a.tran3s.round-border(href='https://www.instagram.com/_naren_kumar_/')
+      i.fa.fa-instagram(aria-hidden='true')
+    a.tran3s.round-border(href='https://www.linkedin.com/in/naren-kumar-0a4294185/')
+      i.fa.fa-linkedin(aria-hidden='true')
+    a.tran3s.round-border(href='https://github.com/NarenKumarVR')
+      i.fa.fa-github(aria-hidden='true')
+    a.tran3s.round-border(href='https://drive.google.com/file/d/1QVFyo9hDIcuxn0jED0kRX8DaOZ1Mwwj-/view?usp=sharing')
+      i.fa.fa-user-circle-o(aria-hidden='true')
+    p  Developed by Naren Kumar V R

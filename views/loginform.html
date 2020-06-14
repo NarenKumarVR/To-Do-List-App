@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Log in</title>
+</head>
+<body>
+  <div style="padding: 0;margin-top: 80px;" class="main"> 
+        <!-- Sing in  Form -->
+        <section class="sign-in">
+          <div class="container">
+              <div class="signin-content">
+                  <div class="signin-image">
+                      <figure><img src="images/signin-images.jpg" alt="sign up image"></figure>
+                      <a href="/signup" class="signup-image-link">Create an account</a>
+                  </div>
+
+                  <div class="signin-form">
+                      <h2 class="form-title">Sign In</h2>
+                      <form method="POST" action="/loginsuccess" class="register-form" id="login-form">
+                          <div class="form-group">
+                              <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                              <input type="text" name="uname" id="your_name" placeholder="Your Name"/>
+                          </div>
+                          <div class="form-group">
+                              <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                              <input type="password" name="pass" id="your_pass" placeholder="Password"/>
+                          </div>
+                          <div class="form-group">
+                              <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                              <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                          </div>
+                          <div class="form-group form-button">
+                              <input type="submit" name="log" id="signin" class="form-submit" value="Log in"/>
+                          </div>
+                      </form>
+                      <div class="social-login">
+                          <span class="social-label">Or login with</span>
+                          <ul class="socials">
+                              <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                              <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                              <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </div>
+    <footer class = "social-footer">
+        <div class="social-container">
+          <!-- <a href="#" class="social__icon--linkedin"><i class="icon--linkedin"></i></a> -->
+          <!-- <i class="icon--linkedin"></i> -->
+          <!-- <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a> -->
+          <!-- <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
+          <a href="https://mail.google.com/mail/u/?authuser=vrnarenkumar@gmail.com" class="tran3s round-border"><i class="fa fa-google" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/vrnk.71299" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/_naren_kumar_/" class="tran3s round-border"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/naren-kumar-0a4294185/" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://github.com/NarenKumarVR" class="tran3s round-border"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://drive.google.com/file/d/1QVFyo9hDIcuxn0jED0kRX8DaOZ1Mwwj-/view?usp=sharing" class="tran3s round-border"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+    
+          <p> Developed by Naren Kumar V R</p>
+        </div>
+      </footer>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
