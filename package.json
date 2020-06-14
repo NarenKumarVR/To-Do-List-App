@@ -1,0 +1,24 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "Complete Node Guide",
+  "main": "app.js",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "ejs": "^3.0.2",
+    "express-handlebars": "^3.0.2",
+    "heroku": "^7.42.1",
+    "mysql2": "^2.1.0",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "NK",
+  "license": "ISC"
+}
